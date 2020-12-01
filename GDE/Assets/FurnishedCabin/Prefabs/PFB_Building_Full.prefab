@@ -2967,7 +2967,6 @@ GameObject:
   - component: {fileID: 4000011258951830}
   - component: {fileID: 33000013073893830}
   - component: {fileID: 23000011800498650}
-  - component: {fileID: 64000012121242332}
   m_Layer: 0
   m_Name: PFB_Building_Base
   m_TagString: Untagged
@@ -3051,20 +3050,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &64000012121242332
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000010905129690}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: c501e1e6763b545d39b5db7be8a3f6e6, type: 3}
 --- !u!1 &1000010920941454
 GameObject:
   m_ObjectHideFlags: 0
