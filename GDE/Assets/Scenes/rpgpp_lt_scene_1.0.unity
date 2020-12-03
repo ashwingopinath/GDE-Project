@@ -12514,7 +12514,7 @@ MonoBehaviour:
     width: 130
     height: 100
   questNode: {fileID: 1579802111}
-  showDescription: 0
+  showDescription: 1
   showTooltip: 0
   showDefault: 0
   showSettings: 1
@@ -12523,8 +12523,8 @@ MonoBehaviour:
   showOptionalThresholds: 0
   prefab: {fileID: 1993597785274838, guid: 0af4c736c40eaf34e9939638ad111389, type: 3}
   questIcon: {fileID: 21300000, guid: a36b26cc201e4d841ae8b206289f5593, type: 3}
-  questName: Gather Gems
-  description: Gather some blocks for your dad!
+  questName: Gather Flowers
+  description: Gather some flowers for your dad!
   toolTip: 
   startAvailability: 0
   constantAvailability: 0
@@ -12533,7 +12533,7 @@ MonoBehaviour:
   repeatable: 0
   repeatableTime: 0
   dontDelete: 0
-  singleComplete: 0
+  singleComplete: 1
   startSpawningOnDiscover: 1
   noSpawnIfNoPlayer: 0
   timed: 1
