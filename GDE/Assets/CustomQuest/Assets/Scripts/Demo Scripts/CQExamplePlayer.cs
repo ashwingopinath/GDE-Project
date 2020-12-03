@@ -104,30 +104,7 @@ public class CQExamplePlayer : MonoBehaviour
 
     public void Movement()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            if (GetComponent<Rigidbody>().velocity.magnitude < movementSpeed)
-            {
-                GetComponent<Rigidbody>().AddForce(transform.forward * movementSpeed);
-            }
-        }
-        else if (Input.GetKey(KeyCode.S))
-        {
-            if (GetComponent<Rigidbody>().velocity.magnitude < movementSpeed)
-            {
-                GetComponent<Rigidbody>().AddForce(-transform.forward * movementSpeed);
-            }
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            var newDir = Vector3.RotateTowards(transform.forward, -transform.right, rotationSpeed, 0.0f);
-            transform.rotation = Quaternion.LookRotation(newDir);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            var newDir = Vector3.RotateTowards(transform.forward, transform.right, rotationSpeed, 0.0f);
-            transform.rotation = Quaternion.LookRotation(newDir);
-        }
+       
     }
 
     /// <summary>
