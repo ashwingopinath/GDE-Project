@@ -33,6 +33,7 @@ public class Player : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space)){
             anim.SetBool("Jump",true);
+            GetComponent<Rigidbody>().AddForce(Vector3.forward * 10, ForceMode.VelocityChange);
         }
         else
             anim.SetBool("Jump",false);
