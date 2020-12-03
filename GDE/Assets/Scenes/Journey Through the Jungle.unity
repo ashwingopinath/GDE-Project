@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3106,7 +3106,7 @@ PrefabInstance:
     - target: {fileID: 6869582078536340776, guid: dbd034399f0659c44a6b7e84c26e56db,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6869582078536340776, guid: dbd034399f0659c44a6b7e84c26e56db,
         type: 3}
@@ -7829,7 +7829,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 451208, guid: 23d25b2e2d4364dd4b92c52ef40cd36e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 451208, guid: 23d25b2e2d4364dd4b92c52ef40cd36e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12646,7 +12646,7 @@ MonoBehaviour:
   singleComplete: 1
   startSpawningOnDiscover: 1
   noSpawnIfNoPlayer: 0
-  timed: 1
+  timed: 0
   matchOptionalLevels: 0
   pickUpAble: 1
   time: 60
