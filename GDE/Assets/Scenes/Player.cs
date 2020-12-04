@@ -39,6 +39,7 @@ public class Player : MonoBehaviour
         }        
         if(Input.GetKeyDown(KeyCode.Space)){
             // GetComponent<Rigidbody>().AddForce(Vector3.up * 2,ForceMode.VelocityChange);
+            FindObjectOfType<AudioManager>().Play("Jump");
             anim.SetBool("Grounded",true);
         }
         if(GetComponent<Rigidbody>().velocity.y > 0.9)
