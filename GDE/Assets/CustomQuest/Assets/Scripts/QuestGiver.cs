@@ -106,7 +106,7 @@ public class QuestGiver : MonoBehaviour
     /// </summary>
     /// <param name="coll">The collider colliding with the questGiver</param>
     public void OnTriggerEnter(Collider coll)
-    {
+    {   
         if (radius > 0 && walkIntoStartQuest == true)
         {
             CQPlayerObject player = coll.GetComponent<CQPlayerObject>();
