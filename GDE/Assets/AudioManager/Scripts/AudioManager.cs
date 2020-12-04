@@ -37,14 +37,34 @@ using UnityEngine;
             Play("Theme");
         }
 
-       public void Play (string name)
-       {
-           Sound s = Array.Find(sounds, sound => sound.name == name);
-           if (s == null)
-           {
-               Debug.LogWarning("Sound: " + name + " not found!");
-               return;
-           }
-           s.source.Play();
-       }
+        public void Play (string name)
+        {
+            Sound s = Array.Find(sounds, sound => sound.name == name);
+            if (s == null)
+            {
+                Debug.LogWarning("Sound: " + name + " not found!");
+                return;
+            }
+            s.source.Play();
+        }
+        public void setLoop (string name, bool loop)
+        {
+            Sound s = Array.Find(sounds, sound => sound.name == name);
+            if (s == null)
+            {
+                Debug.LogWarning("Sound: " + name + " not found!");
+                return;
+            }
+            s.source.loop = loop;
+        }
+        public void Stop (string name)
+        {
+            Sound s = Array.Find(sounds, sound => sound.name == name);
+            if (s == null)
+            {
+                Debug.LogWarning("Sound: " + name + " not found!");
+                return;
+            }
+            s.source.Stop();
+        }
     }

@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     private Animator anim;
     public float moveSpeed = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,15 +38,22 @@ public class Player : MonoBehaviour
             }
             
         }
-        // if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) )
-        //     FindObjectOfType<AudioManager>().Play("Walk");
+        AudioManager walkSound =  FindObjectOfType<AudioManager>();
+        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.S) ){
+            walkSound.setLoop("Walk",true);
+            walkSound.Play("Walk");
+        }
+        else if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S)){
+            walkSound.Stop("Walk");
+        }
         if(Input.GetKeyDown(KeyCode.Space)){
             // GetComponent<Rigidbody>().AddForce(Vector3.up * 2,ForceMode.VelocityChange);
             anim.SetBool("Grounded",true);
             FindObjectOfType<AudioManager>().Play("Jump");
         }
-        if(GetComponent<Rigidbody>().velocity.y > 0.9)
+        if(GetComponent<Rigidbody>().velocity.y > 0.9){
             anim.SetBool("Grounded",false);
+        }
         anim.SetFloat("Velocity",GetComponent<Rigidbody>().velocity.y);
 
     }
