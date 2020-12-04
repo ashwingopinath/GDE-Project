@@ -790,7 +790,7 @@ Transform:
   - {fileID: 1205289291}
   - {fileID: 766042417}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &56326134
 PrefabInstance:
@@ -4018,7 +4018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051f5fdc13b6b5d4d9dac6a06795866a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windowID: 0
+  windowID: 1
   quest: {fileID: 696017784}
   allEdges:
   - {fileID: 2120894180}
@@ -9046,6 +9046,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 449667666}
   m_CullTransparentMesh: 0
+--- !u!114 &452299203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d645e353ccb414541b7d15485fb13179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNode: {fileID: 1742321704}
+  connections: []
+  left: 0
+  rect:
+    serializedVersion: 2
+    x: 116
+    y: 40
+    width: 10
+    height: 10
 --- !u!1 &452959037
 GameObject:
   m_ObjectHideFlags: 0
@@ -9279,7 +9300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11330,6 +11351,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 15977c94193725642b83e5c7be73b2e8, type: 3}
+--- !u!114 &557125528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 051f5fdc13b6b5d4d9dac6a06795866a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowID: 3
+  quest: {fileID: 2021230435}
+  allEdges:
+  - {fileID: 1172527902}
+  - {fileID: 1197752822}
+  - {fileID: 1745636579}
+  startEdge: {fileID: 1172527902}
+  completeEdge: {fileID: 1197752822}
+  failEdge: {fileID: 1745636579}
 --- !u!1 &558349040
 GameObject:
   m_ObjectHideFlags: 0
@@ -12582,13 +12624,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610848599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.59, y: 24.12, z: 185}
+  m_LocalPosition: {x: -23.97, y: 24.12, z: 423.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 515946072}
   - {fileID: 1393805867}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &612864555 stripped
 GameObject:
@@ -12949,7 +12991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4003897846794392, guid: cd87e5026d1695148aabe96121c526ef, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4003897846794392, guid: cd87e5026d1695148aabe96121c526ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -13946,7 +13988,7 @@ MonoBehaviour:
   isCustomScript: 0
   toolbarInt: 1
   editorType: 0
-  amount: 25
+  amount: 1
   criteriaName: Gather Gems
   type: 1
   criteriaObject: {fileID: 1159802807427632, guid: d13e6b02dfcf0604b9f7fd39a28ea46c,
@@ -13985,14 +14027,14 @@ MonoBehaviour:
   isCustomScript: 0
   rectangleNode:
     serializedVersion: 2
-    x: 100
-    y: 100
+    x: 151
+    y: 129
     width: 130
     height: 100
   questNode: {fileID: 213240758}
   showDescription: 1
   showTooltip: 0
-  showDefault: 0
+  showDefault: 1
   showSettings: 1
   showRelations: 1
   showThresholds: 0
@@ -14009,7 +14051,7 @@ MonoBehaviour:
   repeatable: 0
   repeatableTime: 0
   dontDelete: 0
-  singleComplete: 1
+  singleComplete: 0
   startSpawningOnDiscover: 1
   noSpawnIfNoPlayer: 0
   timed: 0
@@ -14024,8 +14066,13 @@ MonoBehaviour:
   optionalCriterias: []
   optionalRewards: []
   completedOptionalThreshold: 0
-  unCompletedQuests: []
-  questsToUnlock: []
+  unCompletedQuests:
+  - {fileID: 1094124924}
+  - {fileID: 782361594}
+  - {fileID: 2073272094}
+  - {fileID: 809348976}
+  questsToUnlock:
+  - {fileID: 947583789}
   handInObjects:
   - {fileID: 2102306127}
   questGivers:
@@ -14055,7 +14102,7 @@ Transform:
   - {fileID: 1371528382}
   - {fileID: 81509429}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &698582296
 GameObject:
@@ -14941,6 +14988,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 264414c28ea0fbb41b924fd17d9228b3, type: 3}
+--- !u!114 &751837495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d645e353ccb414541b7d15485fb13179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNode: {fileID: 1742321704}
+  connections: []
+  left: 1
+  rect:
+    serializedVersion: 2
+    x: 5
+    y: 4
+    width: 10
+    height: 10
 --- !u!1 &752177699 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1612273161005096, guid: ae9772ea62bbc724eb9b8ef81109f733,
@@ -15732,7 +15800,7 @@ MonoBehaviour:
   isCustomScript: 0
   toolbarInt: 1
   editorType: 0
-  amount: 30
+  amount: 1
   criteriaName: Flowers
   type: 1
   criteriaObject: {fileID: 1159802807427632, guid: 28a20a84abeb0a54891b536f54cd75dc,
@@ -15776,7 +15844,7 @@ MonoBehaviour:
   questNode: {fileID: 1579802111}
   showDescription: 1
   showTooltip: 0
-  showDefault: 0
+  showDefault: 1
   showSettings: 1
   showRelations: 1
   showThresholds: 0
@@ -15784,7 +15852,7 @@ MonoBehaviour:
   prefab: {fileID: 1993597785274838, guid: 0af4c736c40eaf34e9939638ad111389, type: 3}
   questIcon: {fileID: 21300000, guid: a36b26cc201e4d841ae8b206289f5593, type: 3}
   questName: Gather Flowers
-  description: Gather some Yellow flowers for your dad!
+  description: Could you gather some Yellow flowers for me?
   toolTip: 
   startAvailability: 0
   constantAvailability: 0
@@ -15808,8 +15876,13 @@ MonoBehaviour:
   optionalCriterias: []
   optionalRewards: []
   completedOptionalThreshold: 0
-  unCompletedQuests: []
-  questsToUnlock: []
+  unCompletedQuests:
+  - {fileID: 1094124924}
+  questsToUnlock:
+  - {fileID: 2073272094}
+  - {fileID: 809348976}
+  - {fileID: 696017784}
+  - {fileID: 947583789}
   handInObjects:
   - {fileID: 964885133}
   questGivers:
@@ -15837,7 +15910,7 @@ Transform:
   - {fileID: 1063334895}
   - {fileID: 728703304}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &782367663
 PrefabInstance:
@@ -16333,6 +16406,105 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 264414c28ea0fbb41b924fd17d9228b3, type: 3}
+--- !u!1 &809348975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 809348977}
+  - component: {fileID: 809348976}
+  m_Layer: 0
+  m_Name: Conversation Grandma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &809348976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809348975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad43c1186aced74089481edb755f61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCustomScript: 0
+  rectangleNode:
+    serializedVersion: 2
+    x: 136
+    y: 68
+    width: 130
+    height: 100
+  questNode: {fileID: 557125528}
+  showDescription: 1
+  showTooltip: 1
+  showDefault: 1
+  showSettings: 1
+  showRelations: 1
+  showThresholds: 0
+  showOptionalThresholds: 0
+  prefab: {fileID: 1923867901801768, guid: f2134803f53e77042b139f058be166d0, type: 3}
+  questIcon: {fileID: 21300000, guid: a36b26cc201e4d841ae8b206289f5593, type: 3}
+  questName: Conversation(Grandma)
+  description: 'Hey There!
+
+    (Press Accept to Continue)'
+  toolTip: 
+  startAvailability: 0
+  constantAvailability: 0
+  autoComplete: 1
+  questCompleted: 0
+  repeatable: 0
+  repeatableTime: 0
+  dontDelete: 0
+  singleComplete: 0
+  startSpawningOnDiscover: 1
+  noSpawnIfNoPlayer: 0
+  timed: 0
+  matchOptionalLevels: 0
+  pickUpAble: 1
+  time: 0
+  criterias: []
+  rewards: []
+  thresholds: 
+  optionalThresholds: 
+  optionalCriterias: []
+  optionalRewards: []
+  completedOptionalThreshold: 0
+  unCompletedQuests:
+  - {fileID: 1094124924}
+  - {fileID: 782361594}
+  - {fileID: 2073272094}
+  questsToUnlock:
+  - {fileID: 696017784}
+  - {fileID: 947583789}
+  handInObjects:
+  - {fileID: 2102306127}
+  questGivers:
+  - {fileID: 2102306126}
+  playersUnCompleted: []
+  playersCompleted: []
+--- !u!4 &809348977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809348975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &811948452
 GameObject:
   m_ObjectHideFlags: 0
@@ -18844,6 +19016,105 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: c23d7dd34e2d29a42bf0998f5f20de59, type: 3}
+--- !u!1 &947583788
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 947583790}
+  - component: {fileID: 947583789}
+  m_Layer: 0
+  m_Name: Conversation Grandma (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &947583789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947583788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad43c1186aced74089481edb755f61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCustomScript: 0
+  rectangleNode:
+    serializedVersion: 2
+    x: 136
+    y: 68
+    width: 130
+    height: 100
+  questNode: {fileID: 557125528}
+  showDescription: 1
+  showTooltip: 1
+  showDefault: 1
+  showSettings: 1
+  showRelations: 1
+  showThresholds: 0
+  showOptionalThresholds: 0
+  prefab: {fileID: 1923867901801768, guid: f2134803f53e77042b139f058be166d0, type: 3}
+  questIcon: {fileID: 21300000, guid: a36b26cc201e4d841ae8b206289f5593, type: 3}
+  questName: Conversation(Grandma)
+  description: 'Go to Signpost number 2 to win and get outta here!
+
+    (Press Accept
+    to Close)'
+  toolTip: 
+  startAvailability: 0
+  constantAvailability: 0
+  autoComplete: 1
+  questCompleted: 0
+  repeatable: 0
+  repeatableTime: 0
+  dontDelete: 0
+  singleComplete: 0
+  startSpawningOnDiscover: 0
+  noSpawnIfNoPlayer: 0
+  timed: 0
+  matchOptionalLevels: 0
+  pickUpAble: 0
+  time: 0
+  criterias: []
+  rewards: []
+  thresholds: 
+  optionalThresholds: 
+  optionalCriterias: []
+  optionalRewards: []
+  completedOptionalThreshold: 0
+  unCompletedQuests:
+  - {fileID: 1094124924}
+  - {fileID: 782361594}
+  - {fileID: 2073272094}
+  - {fileID: 809348976}
+  - {fileID: 696017784}
+  questsToUnlock: []
+  handInObjects: []
+  questGivers:
+  - {fileID: 2102306126}
+  playersUnCompleted: []
+  playersCompleted: []
+--- !u!4 &947583790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947583788}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &949126236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19035,7 +19306,7 @@ Transform:
   - {fileID: 2008524187}
   - {fileID: 1242176791}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &957893736 stripped
 GameObject:
@@ -19178,7 +19449,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quests:
+  - {fileID: 2073272094}
   - {fileID: 782361594}
+  - {fileID: 1094124924}
   radius: 3
   declineDistance: 5
   walkIntoStartQuest: 1
@@ -19199,6 +19472,7 @@ MonoBehaviour:
   sphere: {fileID: 0}
   quests:
   - {fileID: 782361594}
+  - {fileID: 1094124924}
   handInByCollision: 1
 --- !u!1 &966421830 stripped
 GameObject:
@@ -21136,7 +21410,7 @@ RectTransform:
   - {fileID: 96103993}
   - {fileID: 1605595746}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -21490,7 +21764,7 @@ Transform:
   - {fileID: 867978180}
   - {fileID: 599391491}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070783264 stripped
 GameObject:
@@ -21809,6 +22083,105 @@ MonoBehaviour:
   rewardUis: []
   rewards: []
   rectTransform: {fileID: 0}
+--- !u!1 &1094124923
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1094124925}
+  - component: {fileID: 1094124924}
+  m_Layer: 0
+  m_Name: Conversation Dad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1094124924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094124923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad43c1186aced74089481edb755f61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCustomScript: 0
+  rectangleNode:
+    serializedVersion: 2
+    x: 136
+    y: 68
+    width: 130
+    height: 100
+  questNode: {fileID: 557125528}
+  showDescription: 1
+  showTooltip: 1
+  showDefault: 1
+  showSettings: 1
+  showRelations: 1
+  showThresholds: 0
+  showOptionalThresholds: 0
+  prefab: {fileID: 1923867901801768, guid: f2134803f53e77042b139f058be166d0, type: 3}
+  questIcon: {fileID: 0}
+  questName: Conversation(Dad)
+  description: 'Good Morning!
+
+    (Press Accept to Continue.)'
+  toolTip: 
+  startAvailability: 0
+  constantAvailability: 0
+  autoComplete: 1
+  questCompleted: 0
+  repeatable: 0
+  repeatableTime: 0
+  dontDelete: 0
+  singleComplete: 1
+  startSpawningOnDiscover: 1
+  noSpawnIfNoPlayer: 0
+  timed: 0
+  matchOptionalLevels: 0
+  pickUpAble: 1
+  time: 0
+  criterias: []
+  rewards: []
+  thresholds: 
+  optionalThresholds: 
+  optionalCriterias: []
+  optionalRewards: []
+  completedOptionalThreshold: 0
+  unCompletedQuests: []
+  questsToUnlock:
+  - {fileID: 782361594}
+  - {fileID: 2073272094}
+  - {fileID: 809348976}
+  - {fileID: 696017784}
+  - {fileID: 947583789}
+  handInObjects:
+  - {fileID: 964885133}
+  questGivers:
+  - {fileID: 964885132}
+  playersUnCompleted: []
+  playersCompleted: []
+--- !u!4 &1094124925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094124923}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1098525131
 GameObject:
   m_ObjectHideFlags: 0
@@ -22006,6 +22379,132 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 70fbff8150321794f8532fef4f4d7c98, type: 3}
+--- !u!1001 &1107953139
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 98.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 22.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1231
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1231
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677502033, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1231
+      objectReference: {fileID: 0}
+    - target: {fileID: 8936840688677855345, guid: 91652477daefd794bbfc1601d330e33b,
+        type: 3}
+      propertyPath: m_Name
+      value: PT_Medieval_Boy_Peasant_01_a
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 91652477daefd794bbfc1601d330e33b, type: 3}
+--- !u!1 &1107953140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8936840688677855345, guid: 91652477daefd794bbfc1601d330e33b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1107953139}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1107953141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107953140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5e3f19dd6f1dd4bb3a69c896c2d155, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  sphere: {fileID: 0}
+  quests:
+  - {fileID: 2021230435}
+  handInByCollision: 1
+--- !u!114 &1107953142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1107953140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25c74c207a09ff24caf739f5ee542b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests:
+  - {fileID: 2021230435}
+  - {fileID: 1474140566}
+  radius: 3
+  declineDistance: 5
+  walkIntoStartQuest: 1
+  questSymbol: {fileID: 0}
 --- !u!1001 &1112101676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23084,6 +23583,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63ce2b31e16acab4d8a41f884c36333c, type: 3}
+--- !u!114 &1172527902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d645e353ccb414541b7d15485fb13179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNode: {fileID: 557125528}
+  connections: []
+  left: 1
+  rect:
+    serializedVersion: 2
+    x: 5
+    y: 4
+    width: 10
+    height: 10
 --- !u!4 &1173248464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c,
@@ -23204,6 +23724,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1175906302}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1186261241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d645e353ccb414541b7d15485fb13179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNode: {fileID: 1742321704}
+  connections: []
+  left: 0
+  rect:
+    serializedVersion: 2
+    x: 116
+    y: 20
+    width: 10
+    height: 10
 --- !u!1 &1188268089 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1369031296425274, guid: 22a3fd8d3e59a1149bdcd775c0e87241,
@@ -23244,6 +23785,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 70fbff8150321794f8532fef4f4d7c98, type: 3}
+--- !u!114 &1197752822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d645e353ccb414541b7d15485fb13179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNode: {fileID: 557125528}
+  connections: []
+  left: 0
+  rect:
+    serializedVersion: 2
+    x: 116
+    y: 20
+    width: 10
+    height: 10
 --- !u!1 &1198873059 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1458573784885960, guid: 6910e2407cd484a42a0c2598114751a0,
@@ -25300,7 +25862,7 @@ PrefabInstance:
     - target: {fileID: 8068532171942777340, guid: 7579ec7c669ef6143a8bbd425525f768,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8068532171942777340, guid: 7579ec7c669ef6143a8bbd425525f768,
         type: 3}
@@ -30834,6 +31396,101 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1474140565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1474140567}
+  - component: {fileID: 1474140566}
+  m_Layer: 0
+  m_Name: Conversation 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1474140566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474140565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad43c1186aced74089481edb755f61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCustomScript: 0
+  rectangleNode:
+    serializedVersion: 2
+    x: 100
+    y: 100
+    width: 130
+    height: 100
+  questNode: {fileID: 1742321704}
+  showDescription: 1
+  showTooltip: 0
+  showDefault: 1
+  showSettings: 1
+  showRelations: 1
+  showThresholds: 0
+  showOptionalThresholds: 0
+  prefab: {fileID: 1264346402681472, guid: 4cb98a533f54b394aae6c378cfc583db, type: 3}
+  questIcon: {fileID: 0}
+  questName: Conversation
+  description: 'I''ll let you in a secret. Go to sign number 2 and you''ll win.
+
+    (Press
+    Accept to close)'
+  toolTip: 
+  startAvailability: 0
+  constantAvailability: 0
+  autoComplete: 1
+  questCompleted: 0
+  repeatable: 0
+  repeatableTime: 0
+  dontDelete: 0
+  singleComplete: 0
+  startSpawningOnDiscover: 0
+  noSpawnIfNoPlayer: 0
+  timed: 0
+  matchOptionalLevels: 0
+  pickUpAble: 0
+  time: 0
+  criterias: []
+  rewards: []
+  thresholds: 
+  optionalThresholds: 
+  optionalCriterias: []
+  optionalRewards: []
+  completedOptionalThreshold: 0
+  unCompletedQuests:
+  - {fileID: 2021230435}
+  questsToUnlock: []
+  handInObjects: []
+  questGivers:
+  - {fileID: 1107953142}
+  playersUnCompleted: []
+  playersCompleted: []
+--- !u!4 &1474140567
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474140565}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1484821196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31393,7 +32050,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1509042050
 PrefabInstance:
@@ -33225,7 +33882,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051f5fdc13b6b5d4d9dac6a06795866a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windowID: 1
+  windowID: 2
   quest: {fileID: 782361594}
   allEdges:
   - {fileID: 565819421}
@@ -35770,7 +36427,7 @@ Transform:
   - {fileID: 1442393401}
   - {fileID: 648900221}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703938784 stripped
 GameObject:
@@ -36247,7 +36904,7 @@ Transform:
   - {fileID: 88285874}
   - {fileID: 1838815609}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1726209518
 PrefabInstance:
@@ -36732,7 +37389,7 @@ Transform:
   - {fileID: 596709212}
   - {fileID: 387298199}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1741693213 stripped
 GameObject:
@@ -36754,6 +37411,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 7dca68918011bd644a4dc268eea79b44, type: 3}
+--- !u!114 &1742321704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 051f5fdc13b6b5d4d9dac6a06795866a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowID: 0
+  quest: {fileID: 1474140566}
+  allEdges:
+  - {fileID: 751837495}
+  - {fileID: 1186261241}
+  - {fileID: 452299203}
+  startEdge: {fileID: 751837495}
+  completeEdge: {fileID: 1186261241}
+  failEdge: {fileID: 452299203}
 --- !u!1 &1742383490 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1329638177129074, guid: a25996a7d0674de40a8273b54b50aa7b,
@@ -36794,6 +37472,27 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d68abfcba378a4f46847fa7f406b6ba6, type: 3}
+--- !u!114 &1745636579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d645e353ccb414541b7d15485fb13179, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNode: {fileID: 557125528}
+  connections: []
+  left: 0
+  rect:
+    serializedVersion: 2
+    x: 116
+    y: 40
+    width: 10
+    height: 10
 --- !u!4 &1745785372 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4947743726954784, guid: 63ce2b31e16acab4d8a41f884c36333c,
@@ -37332,7 +38031,7 @@ Transform:
   - {fileID: 395013682}
   - {fileID: 1953252464}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1769086168
 PrefabInstance:
@@ -39813,7 +40512,7 @@ RectTransform:
   m_Children:
   - {fileID: 1867219359}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -42956,7 +43655,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4998326679312090, guid: 2b519101e10d4a74580d4c86ac9e03e6, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4998326679312090, guid: 2b519101e10d4a74580d4c86ac9e03e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -43299,6 +43998,102 @@ Transform:
   - {fileID: 1635158356}
   m_Father: {fileID: 782361595}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2021230434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2021230436}
+  - component: {fileID: 2021230435}
+  m_Layer: 0
+  m_Name: Conversation 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2021230435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021230434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad43c1186aced74089481edb755f61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCustomScript: 0
+  rectangleNode:
+    serializedVersion: 2
+    x: 136
+    y: 68
+    width: 130
+    height: 100
+  questNode: {fileID: 557125528}
+  showDescription: 1
+  showTooltip: 1
+  showDefault: 1
+  showSettings: 1
+  showRelations: 1
+  showThresholds: 0
+  showOptionalThresholds: 0
+  prefab: {fileID: 1923867901801768, guid: f2134803f53e77042b139f058be166d0, type: 3}
+  questIcon: {fileID: 0}
+  questName: Conversation
+  description: 'Hey! I am the Friendly Neighbourhood Peasant boy.
+
+    (Press Accept
+    to Continue Conversation.)'
+  toolTip: Press Accept to continue conversation
+  startAvailability: 0
+  constantAvailability: 0
+  autoComplete: 1
+  questCompleted: 0
+  repeatable: 0
+  repeatableTime: 0
+  dontDelete: 0
+  singleComplete: 0
+  startSpawningOnDiscover: 1
+  noSpawnIfNoPlayer: 0
+  timed: 0
+  matchOptionalLevels: 0
+  pickUpAble: 1
+  time: 0
+  criterias: []
+  rewards: []
+  thresholds: 
+  optionalThresholds: 
+  optionalCriterias: []
+  optionalRewards: []
+  completedOptionalThreshold: 0
+  unCompletedQuests: []
+  questsToUnlock:
+  - {fileID: 1474140566}
+  handInObjects:
+  - {fileID: 1107953141}
+  questGivers:
+  - {fileID: 1107953142}
+  playersUnCompleted: []
+  playersCompleted: []
+--- !u!4 &2021230436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021230434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2024642046
 PrefabInstance:
@@ -44028,6 +44823,104 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2066089947}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2073272093
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2073272095}
+  - component: {fileID: 2073272094}
+  m_Layer: 0
+  m_Name: Conversation Dad (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2073272094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073272093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bad43c1186aced74089481edb755f61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCustomScript: 0
+  rectangleNode:
+    serializedVersion: 2
+    x: 136
+    y: 68
+    width: 130
+    height: 100
+  questNode: {fileID: 557125528}
+  showDescription: 1
+  showTooltip: 1
+  showDefault: 1
+  showSettings: 1
+  showRelations: 1
+  showThresholds: 0
+  showOptionalThresholds: 0
+  prefab: {fileID: 1923867901801768, guid: f2134803f53e77042b139f058be166d0, type: 3}
+  questIcon: {fileID: 21300000, guid: a36b26cc201e4d841ae8b206289f5593, type: 3}
+  questName: Conversation(Dad)
+  description: 'Go to your Grandma now.
+
+    (Just Follow the Path.)'
+  toolTip: 
+  startAvailability: 0
+  constantAvailability: 0
+  autoComplete: 1
+  questCompleted: 0
+  repeatable: 0
+  repeatableTime: 0
+  dontDelete: 0
+  singleComplete: 0
+  startSpawningOnDiscover: 0
+  noSpawnIfNoPlayer: 0
+  timed: 0
+  matchOptionalLevels: 0
+  pickUpAble: 0
+  time: 0
+  criterias: []
+  rewards: []
+  thresholds: 
+  optionalThresholds: 
+  optionalCriterias: []
+  optionalRewards: []
+  completedOptionalThreshold: 0
+  unCompletedQuests:
+  - {fileID: 1094124924}
+  - {fileID: 782361594}
+  questsToUnlock:
+  - {fileID: 809348976}
+  - {fileID: 696017784}
+  - {fileID: 947583789}
+  handInObjects: []
+  questGivers:
+  - {fileID: 964885132}
+  playersUnCompleted: []
+  playersCompleted: []
+--- !u!4 &2073272095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073272093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2073909330 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1369031296425274, guid: 22a3fd8d3e59a1149bdcd775c0e87241,
@@ -44845,7 +45738,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quests:
+  - {fileID: 947583789}
   - {fileID: 696017784}
+  - {fileID: 809348976}
   radius: 3
   declineDistance: 5
   walkIntoStartQuest: 1
@@ -44866,6 +45761,7 @@ MonoBehaviour:
   sphere: {fileID: 0}
   quests:
   - {fileID: 696017784}
+  - {fileID: 809348976}
   handInByCollision: 1
 --- !u!64 &2102306128
 MeshCollider:
