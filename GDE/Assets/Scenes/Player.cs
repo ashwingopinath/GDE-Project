@@ -36,11 +36,13 @@ public class Player : MonoBehaviour
                 anim.SetFloat("turn",Math.Min(anim.GetFloat("turn") + 0.05f,0.0f));
             }
             
-        }        
+        }
+        // if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) )
+        //     FindObjectOfType<AudioManager>().Play("Walk");
         if(Input.GetKeyDown(KeyCode.Space)){
             // GetComponent<Rigidbody>().AddForce(Vector3.up * 2,ForceMode.VelocityChange);
-            FindObjectOfType<AudioManager>().Play("Jump");
             anim.SetBool("Grounded",true);
+            FindObjectOfType<AudioManager>().Play("Jump");
         }
         if(GetComponent<Rigidbody>().velocity.y > 0.9)
             anim.SetBool("Grounded",false);
