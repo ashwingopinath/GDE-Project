@@ -8,6 +8,6 @@ public class EndGame : MonoBehaviour
     
     public void OnTriggerEnter(Collider coll)
     {   
-        UnityEngine.SceneManagement.SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
     }
 }

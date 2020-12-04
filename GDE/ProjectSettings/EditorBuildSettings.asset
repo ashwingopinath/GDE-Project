@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Journey Through the Jungle.unity
     guid: 400a5ea97ff3e3a4b8ef6c8027201bc1
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 71a0d7cc108950a479386dac567e9042
   m_configObjects: {}
