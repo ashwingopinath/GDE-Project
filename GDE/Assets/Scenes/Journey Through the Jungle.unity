@@ -30703,6 +30703,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1838815609}
+  - component: {fileID: 1838815610}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -30724,6 +30725,43 @@ Transform:
   m_Father: {fileID: 1724921532}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1838815610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838815608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb5fcf1aa18d6a748bc3fce43c208123, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Theme
+    clip: {fileID: 8300000, guid: 2eec6a4c0dc6dc64d8f4beabc19d43dc, type: 3}
+    loop: 1
+    volume: 0.2
+    pitch: 1
+    source: {fileID: 0}
+  - name: Walk
+    clip: {fileID: 8300000, guid: aa52ac5522e59824bb3e154b215b2160, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 5099c90d0e446274aa0c37259755105d, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Pickup
+    clip: {fileID: 8300000, guid: 5a910eefa74d7a247962d73111e3b330, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
 --- !u!1 &1839976084 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1458573784885960, guid: 6910e2407cd484a42a0c2598114751a0,
