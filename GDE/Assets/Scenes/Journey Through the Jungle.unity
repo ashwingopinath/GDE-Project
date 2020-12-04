@@ -27534,7 +27534,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 60f048e3ccfd7d0498e095661396963b, type: 3}
-<<<<<<< HEAD
 --- !u!1 &1568261475
 GameObject:
   m_ObjectHideFlags: 0
@@ -27686,8 +27685,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568261475}
   m_CullTransparentMesh: 0
-=======
->>>>>>> 1ef8d4d8403adf331d3cae5876a500b4772e1093
 --- !u!1001 &1568635386
 PrefabInstance:
   m_ObjectHideFlags: 0
