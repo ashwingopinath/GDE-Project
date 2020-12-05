@@ -790,7 +790,7 @@ Transform:
   - {fileID: 1205289291}
   - {fileID: 766042417}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &56326134
 PrefabInstance:
@@ -9304,7 +9304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9318,6 +9318,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23338315923416344, guid: 1d1d31e28cef19c439cb538bc0390a91,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ac2b86c1512f1c94797efd7ce97279ac, type: 2}
     - target: {fileID: 114676732048333344, guid: 1d1d31e28cef19c439cb538bc0390a91,
         type: 3}
       propertyPath: m_Maskable
@@ -9379,7 +9384,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114039807096955222, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
 --- !u!1 &456464687 stripped
 GameObject:
@@ -9407,27 +9413,11 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 456464687}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &456464692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456464687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5e3f19dd6f1dd4bb3a69c896c2d155, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 3
-  sphere: {fileID: 0}
-  quests: []
-  handInByCollision: 1
 --- !u!1001 &457368148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12571,7 +12561,7 @@ Transform:
   - {fileID: 515946072}
   - {fileID: 1393805867}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &612864555 stripped
 GameObject:
@@ -12932,7 +12922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4003897846794392, guid: cd87e5026d1695148aabe96121c526ef, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4003897846794392, guid: cd87e5026d1695148aabe96121c526ef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -14043,7 +14033,7 @@ Transform:
   - {fileID: 1371528382}
   - {fileID: 81509429}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &698582296
 GameObject:
@@ -15854,7 +15844,7 @@ Transform:
   - {fileID: 1063334895}
   - {fileID: 728703304}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &782367663
 PrefabInstance:
@@ -16389,7 +16379,7 @@ MonoBehaviour:
   questNode: {fileID: 557125528}
   showDescription: 1
   showTooltip: 1
-  showDefault: 1
+  showDefault: 0
   showSettings: 1
   showRelations: 1
   showThresholds: 0
@@ -16447,7 +16437,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &811948452
 GameObject:
@@ -18999,7 +18989,7 @@ MonoBehaviour:
   questNode: {fileID: 557125528}
   showDescription: 1
   showTooltip: 1
-  showDefault: 1
+  showDefault: 0
   showSettings: 1
   showRelations: 1
   showThresholds: 0
@@ -19007,7 +18997,7 @@ MonoBehaviour:
   prefab: {fileID: 1923867901801768, guid: f2134803f53e77042b139f058be166d0, type: 3}
   questIcon: {fileID: 21300000, guid: a36b26cc201e4d841ae8b206289f5593, type: 3}
   questName: Conversation(Grandma)
-  description: 'Go to Signpost number 2 to win and get outta here!
+  description: 'Go to the Blue signpost to win and get outta here!
 
     (Press Accept
     to Close)'
@@ -19057,7 +19047,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &949126236
 PrefabInstance:
@@ -19250,7 +19240,7 @@ Transform:
   - {fileID: 2008524187}
   - {fileID: 1242176791}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &957893736 stripped
 GameObject:
@@ -21354,7 +21344,7 @@ RectTransform:
   - {fileID: 96103993}
   - {fileID: 1605595746}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -21708,7 +21698,7 @@ Transform:
   - {fileID: 867978180}
   - {fileID: 599391491}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070783264 stripped
 GameObject:
@@ -22124,7 +22114,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1098525131
 GameObject:
@@ -25874,7 +25864,7 @@ PrefabInstance:
     - target: {fileID: 8068532171942777340, guid: 7579ec7c669ef6143a8bbd425525f768,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8068532171942777340, guid: 7579ec7c669ef6143a8bbd425525f768,
         type: 3}
@@ -28722,6 +28712,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23338315923416344, guid: 1d1d31e28cef19c439cb538bc0390a91,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4ce821c549e6ae541925878851f71f9d, type: 2}
     - target: {fileID: 114676732048333344, guid: 1d1d31e28cef19c439cb538bc0390a91,
         type: 3}
       propertyPath: m_Maskable
@@ -28783,7 +28778,8 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.6
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114039807096955222, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
 --- !u!1 &1343405197 stripped
 GameObject:
@@ -28791,22 +28787,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1343405196}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1343405198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343405197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc5e3f19dd6f1dd4bb3a69c896c2d155, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 3
-  sphere: {fileID: 0}
-  quests: []
-  handInByCollision: 1
 --- !u!114 &1343405199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28827,10 +28807,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343405197}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1347055524 stripped
 GameObject:
@@ -31550,7 +31530,7 @@ MonoBehaviour:
   prefab: {fileID: 1264346402681472, guid: 4cb98a533f54b394aae6c378cfc583db, type: 3}
   questIcon: {fileID: 0}
   questName: Conversation (Bob)
-  description: 'I''ll let you in a secret. Go to signpost number 1 and you''ll win
+  description: 'I''ll let you in a secret. Go to the Brown signpost and you''ll win
     the game.
 
     (Press Accept to close)'
@@ -31596,7 +31576,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1484821196
 MonoBehaviour:
@@ -36504,7 +36484,7 @@ Transform:
   - {fileID: 1442393401}
   - {fileID: 648900221}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1703938784 stripped
 GameObject:
@@ -36981,7 +36961,7 @@ Transform:
   - {fileID: 88285874}
   - {fileID: 1838815609}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1726209518
 PrefabInstance:
@@ -37466,7 +37446,7 @@ Transform:
   - {fileID: 596709212}
   - {fileID: 387298199}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1741693213 stripped
 GameObject:
@@ -38108,7 +38088,7 @@ Transform:
   - {fileID: 395013682}
   - {fileID: 1953252464}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1769086168
 PrefabInstance:
@@ -40508,7 +40488,7 @@ RectTransform:
   m_Children:
   - {fileID: 1867219359}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -44088,7 +44068,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2024642046
 PrefabInstance:
@@ -44937,7 +44917,7 @@ MonoBehaviour:
   description: 'Your Grandma wanted you. Follow this path and go over to your Grandma!
 
     And
-    bewate, don''t trust strangers.
+    beware, don''t trust strangers.
 
     (Press Accept to Continue.)'
   toolTip: 
@@ -44986,7 +44966,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2073909330 stripped
 GameObject:
