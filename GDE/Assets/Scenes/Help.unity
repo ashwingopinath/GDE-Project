@@ -740,9 +740,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "CONTROLS\n\nForward                         W\nBackward                      
-    S\nTurn Right                      D\nTurn Left                        A\n  Quests\t\t      
-    Q\nPause Menu/Resume        Escape\n"
+  m_text: "CONTROLS\n\n Forward\t\t\tW   \n Backward\t\t\tS\n Turn Right\t\t\tD 
+    \n Turn Left\t\t\tA\nRun\t\t\tL.Shift\nPause Menu/Resume        Escape\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d7bd95842deb99045995d25d11749a4e, type: 2}
   m_sharedMaterial: {fileID: -6175227258268703695, guid: d7bd95842deb99045995d25d11749a4e,
@@ -770,7 +769,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.05
+  m_fontSize: 39.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
