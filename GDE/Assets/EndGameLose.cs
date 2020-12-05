@@ -8,6 +8,6 @@ public class EndGameLose : MonoBehaviour
     
     public void OnTriggerEnter(Collider coll)
     {   
-        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Lose");
     }
 }
