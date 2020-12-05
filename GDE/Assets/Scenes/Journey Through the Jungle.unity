@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1470,8 +1470,8 @@ MonoBehaviour:
   spawnRadius: 5
   spawnAmount: 0
   spawnRate: 0
-  initialSpawnAmount: 6
-  maxSpawnAmount: 6
+  initialSpawnAmount: 5
+  maxSpawnAmount: 5
   criteria: {fileID: 696017782}
   spawnedObjects: []
 --- !u!65 &81509426
@@ -1646,8 +1646,8 @@ MonoBehaviour:
   spawnRadius: 5
   spawnAmount: 0
   spawnRate: 0
-  initialSpawnAmount: 6
-  maxSpawnAmount: 6
+  initialSpawnAmount: 5
+  maxSpawnAmount: 5
   criteria: {fileID: 696017782}
   spawnedObjects: []
 --- !u!65 &83853590
@@ -1718,7 +1718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83853588}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 126.8, y: 25.4, z: -39.4}
+  m_LocalPosition: {x: 126.8, y: 22.4, z: -39.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 390856958}
@@ -5765,8 +5765,8 @@ MonoBehaviour:
   spawnRadius: 5
   spawnAmount: 0
   spawnRate: 0
-  initialSpawnAmount: 6
-  maxSpawnAmount: 6
+  initialSpawnAmount: 5
+  maxSpawnAmount: 5
   criteria: {fileID: 696017782}
   spawnedObjects: []
 --- !u!65 &295315838
@@ -5837,7 +5837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295315836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 106.7, y: 22.7, z: 13.1}
+  m_LocalPosition: {x: 106.7, y: 22.6, z: 13.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 340890469}
@@ -7698,8 +7698,8 @@ MonoBehaviour:
   spawnRadius: 5
   spawnAmount: 0
   spawnRate: 0
-  initialSpawnAmount: 6
-  maxSpawnAmount: 6
+  initialSpawnAmount: 5
+  maxSpawnAmount: 5
   criteria: {fileID: 696017782}
   spawnedObjects: []
 --- !u!65 &388434744
@@ -7770,7 +7770,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388434742}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 80.8, y: 23.3, z: 40.9}
+  m_LocalPosition: {x: 80.8, y: 22.3, z: 40.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1257296337}
@@ -11601,8 +11601,8 @@ MonoBehaviour:
   spawnRadius: 5
   spawnAmount: 0
   spawnRate: 0
-  initialSpawnAmount: 6
-  maxSpawnAmount: 6
+  initialSpawnAmount: 5
+  maxSpawnAmount: 5
   criteria: {fileID: 696017782}
   spawnedObjects: []
 --- !u!65 &563471178
@@ -13929,7 +13929,7 @@ MonoBehaviour:
   isCustomScript: 0
   toolbarInt: 1
   editorType: 0
-  amount: 1
+  amount: 20
   criteriaName: Gather Gems
   type: 1
   criteriaObject: {fileID: 1159802807427632, guid: d13e6b02dfcf0604b9f7fd39a28ea46c,
@@ -15741,7 +15741,7 @@ MonoBehaviour:
   isCustomScript: 0
   toolbarInt: 1
   editorType: 0
-  amount: 1
+  amount: 20
   criteriaName: Flowers
   type: 1
   criteriaObject: {fileID: 1159802807427632, guid: 28a20a84abeb0a54891b536f54cd75dc,
@@ -15785,15 +15785,18 @@ MonoBehaviour:
   questNode: {fileID: 1579802111}
   showDescription: 1
   showTooltip: 0
-  showDefault: 1
-  showSettings: 1
+  showDefault: 0
+  showSettings: 0
   showRelations: 1
   showThresholds: 0
   showOptionalThresholds: 0
   prefab: {fileID: 1993597785274838, guid: 0af4c736c40eaf34e9939638ad111389, type: 3}
   questIcon: {fileID: 21300000, guid: a36b26cc201e4d841ae8b206289f5593, type: 3}
   questName: Gather Flowers
-  description: Could you gather some Yellow flowers for me?
+  description: 'Could you gather some Yellow flowers for me?
+
+    Be sure to come
+    back over here once you are done.'
   toolTip: 
   startAvailability: 0
   constantAvailability: 0
@@ -16394,7 +16397,7 @@ MonoBehaviour:
   prefab: {fileID: 1923867901801768, guid: f2134803f53e77042b139f058be166d0, type: 3}
   questIcon: {fileID: 21300000, guid: a36b26cc201e4d841ae8b206289f5593, type: 3}
   questName: Conversation(Grandma)
-  description: 'Hey There!
+  description: 'Hello Sweetie!
 
     (Press Accept to Continue)'
   toolTip: 
@@ -22063,7 +22066,7 @@ MonoBehaviour:
   questNode: {fileID: 557125528}
   showDescription: 1
   showTooltip: 1
-  showDefault: 1
+  showDefault: 0
   showSettings: 1
   showRelations: 1
   showThresholds: 0
@@ -27892,8 +27895,8 @@ MonoBehaviour:
   spawnRadius: 5
   spawnAmount: 0
   spawnRate: 0
-  initialSpawnAmount: 6
-  maxSpawnAmount: 6
+  initialSpawnAmount: 5
+  maxSpawnAmount: 5
   criteria: {fileID: 696017782}
   spawnedObjects: []
 --- !u!65 &1301416762
@@ -27964,7 +27967,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301416760}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 125.4, y: 22.8, z: 42}
+  m_LocalPosition: {x: 125.4, y: 22.5, z: 42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1280571312}
@@ -29493,8 +29496,8 @@ MonoBehaviour:
   spawnRadius: 5
   spawnAmount: 0
   spawnRate: 0
-  initialSpawnAmount: 6
-  maxSpawnAmount: 6
+  initialSpawnAmount: 5
+  maxSpawnAmount: 5
   criteria: {fileID: 696017782}
   spawnedObjects: []
 --- !u!65 &1371528379
@@ -31539,18 +31542,18 @@ MonoBehaviour:
   questNode: {fileID: 1742321704}
   showDescription: 1
   showTooltip: 0
-  showDefault: 1
+  showDefault: 0
   showSettings: 1
   showRelations: 1
   showThresholds: 0
   showOptionalThresholds: 0
   prefab: {fileID: 1264346402681472, guid: 4cb98a533f54b394aae6c378cfc583db, type: 3}
   questIcon: {fileID: 0}
-  questName: Conversation
-  description: 'I''ll let you in a secret. Go to sign number 2 and you''ll win.
+  questName: Conversation (Bob)
+  description: 'I''ll let you in a secret. Go to signpost number 1 and you''ll win
+    the game.
 
-    (Press
-    Accept to close)'
+    (Press Accept to close)'
   toolTip: 
   startAvailability: 0
   constantAvailability: 0
@@ -33027,8 +33030,8 @@ MonoBehaviour:
   spawnRadius: 5
   spawnAmount: 0
   spawnRate: 0
-  initialSpawnAmount: 6
-  maxSpawnAmount: 6
+  initialSpawnAmount: 5
+  maxSpawnAmount: 5
   criteria: {fileID: 696017782}
   spawnedObjects: []
 --- !u!65 &1544229322
@@ -38973,8 +38976,8 @@ MonoBehaviour:
   spawnRadius: 5
   spawnAmount: 0
   spawnRate: 0
-  initialSpawnAmount: 6
-  maxSpawnAmount: 6
+  initialSpawnAmount: 5
+  maxSpawnAmount: 5
   criteria: {fileID: 696017782}
   spawnedObjects: []
 --- !u!65 &1808638753
@@ -40010,8 +40013,8 @@ MonoBehaviour:
   spawnRadius: 5
   spawnAmount: 0
   spawnRate: 0
-  initialSpawnAmount: 6
-  maxSpawnAmount: 6
+  initialSpawnAmount: 5
+  maxSpawnAmount: 5
   criteria: {fileID: 696017782}
   spawnedObjects: []
 --- !u!65 &1843295856
@@ -43394,8 +43397,8 @@ MonoBehaviour:
   spawnRadius: 5
   spawnAmount: 0
   spawnRate: 0
-  initialSpawnAmount: 6
-  maxSpawnAmount: 6
+  initialSpawnAmount: 5
+  maxSpawnAmount: 5
   criteria: {fileID: 696017782}
   spawnedObjects: []
 --- !u!65 &1995952379
@@ -44038,11 +44041,10 @@ MonoBehaviour:
   showOptionalThresholds: 0
   prefab: {fileID: 1923867901801768, guid: f2134803f53e77042b139f058be166d0, type: 3}
   questIcon: {fileID: 0}
-  questName: Conversation
-  description: 'Hey! I am the Friendly Neighbourhood Peasant boy.
+  questName: Conversation (Stranger)
+  description: 'Hey there I am Bob!
 
-    (Press Accept
-    to Continue Conversation.)'
+    (Press Accept to Continue Conversation.)'
   toolTip: Press Accept to continue conversation
   startAvailability: 0
   constantAvailability: 0
@@ -44924,7 +44926,7 @@ MonoBehaviour:
   questNode: {fileID: 557125528}
   showDescription: 1
   showTooltip: 1
-  showDefault: 1
+  showDefault: 0
   showSettings: 1
   showRelations: 1
   showThresholds: 0
@@ -44932,9 +44934,12 @@ MonoBehaviour:
   prefab: {fileID: 1923867901801768, guid: f2134803f53e77042b139f058be166d0, type: 3}
   questIcon: {fileID: 21300000, guid: a36b26cc201e4d841ae8b206289f5593, type: 3}
   questName: Conversation(Dad)
-  description: 'Go to your Grandma now.
+  description: 'Your Grandma wanted you. Follow this path and go over to your Grandma!
 
-    (Just Follow the Path.)'
+    And
+    bewate, don''t trust strangers.
+
+    (Press Accept to Continue.)'
   toolTip: 
   startAvailability: 0
   constantAvailability: 0
