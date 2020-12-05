@@ -13,7 +13,7 @@ public class MainMenu : MonoBehaviour
     }
     public void GoToSettingsMenu()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("SettingsMenu");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Help");
 
     }
     public void GoToMainMenu()
