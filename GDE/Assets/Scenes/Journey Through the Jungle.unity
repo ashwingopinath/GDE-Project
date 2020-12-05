@@ -14005,9 +14005,9 @@ MonoBehaviour:
   questsToUnlock:
   - {fileID: 947583789}
   handInObjects:
-  - {fileID: 0}
+  - {fileID: 1893241043}
   questGivers:
-  - {fileID: 0}
+  - {fileID: 1893241042}
   playersUnCompleted: []
   playersCompleted: []
 --- !u!4 &696017785
@@ -16420,9 +16420,9 @@ MonoBehaviour:
   - {fileID: 696017784}
   - {fileID: 947583789}
   handInObjects:
-  - {fileID: 0}
+  - {fileID: 1893241043}
   questGivers:
-  - {fileID: 0}
+  - {fileID: 1893241042}
   playersUnCompleted: []
   playersCompleted: []
 --- !u!4 &809348977
@@ -19032,7 +19032,7 @@ MonoBehaviour:
   questsToUnlock: []
   handInObjects: []
   questGivers:
-  - {fileID: 0}
+  - {fileID: 1893241042}
   playersUnCompleted: []
   playersCompleted: []
 --- !u!4 &947583790
@@ -41650,7 +41650,7 @@ MonoBehaviour:
   - {fileID: 947583789}
   - {fileID: 696017784}
   - {fileID: 809348976}
-  radius: 0.5
+  radius: 3
   declineDistance: 5
   walkIntoStartQuest: 1
   questSymbol: {fileID: 0}
@@ -41666,7 +41666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc5e3f19dd6f1dd4bb3a69c896c2d155, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 0.5
+  radius: 3
   sphere: {fileID: 0}
   quests:
   - {fileID: 696017784}
