@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9276,7 +9276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 74.55
+      value: 84.94
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9284,7 +9284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -84.57
+      value: -106.3
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalRotation.x
@@ -9292,7 +9292,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: 0.9396927
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalRotation.z
@@ -9300,7 +9300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: -0.3420201
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_RootOrder
@@ -9312,7 +9312,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
+      value: 220
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -28613,7 +28613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 84.94
+      value: 74.55
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalPosition.y
@@ -28621,7 +28621,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -106.3
+      value: -84.57
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalRotation.x
@@ -28629,7 +28629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9396927
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalRotation.z
@@ -28637,7 +28637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.3420201
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_RootOrder
@@ -28649,7 +28649,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 220
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 4472941810534086, guid: 1d1d31e28cef19c439cb538bc0390a91, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -31504,7 +31504,7 @@ MonoBehaviour:
   questsToUnlock: []
   handInObjects: []
   questGivers:
-  - {fileID: 0}
+  - {fileID: 1701745779}
   playersUnCompleted: []
   playersCompleted: []
 --- !u!4 &1474140567
@@ -36622,8 +36622,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quests:
-  - {fileID: 2021230435}
   - {fileID: 1474140566}
+  - {fileID: 2021230435}
   radius: 3
   declineDistance: 5
   walkIntoStartQuest: 1
@@ -44319,14 +44319,14 @@ MonoBehaviour:
   questNode: {fileID: 557125528}
   showDescription: 1
   showTooltip: 1
-  showDefault: 1
+  showDefault: 0
   showSettings: 1
   showRelations: 1
   showThresholds: 0
   showOptionalThresholds: 0
   prefab: {fileID: 1923867901801768, guid: f2134803f53e77042b139f058be166d0, type: 3}
   questIcon: {fileID: 0}
-  questName: Conversation (Stranger)
+  questName: Conversation (Bob)
   description: 'Hey there I am Bob!
 
     (Press Accept to Continue Conversation.)'
@@ -44356,9 +44356,9 @@ MonoBehaviour:
   questsToUnlock:
   - {fileID: 1474140566}
   handInObjects:
-  - {fileID: 0}
+  - {fileID: 1701745780}
   questGivers:
-  - {fileID: 0}
+  - {fileID: 1701745779}
   playersUnCompleted: []
   playersCompleted: []
 --- !u!4 &2021230436
